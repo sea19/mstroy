@@ -15,7 +15,7 @@ describe('TreeStore', () => {
         { id: 8, parent: 4, type: null },
     ];
 
-    const ts = new TreeStore([...items]);
+    const ts = new TreeStore(items);
 
     test('getAll', () => {
         expect(ts.getAll()).toEqual(items);

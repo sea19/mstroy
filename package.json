@@ -1,10 +1,10 @@
 {
   "name": "mstroy",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest",
-    "start": "tsc index.ts && node index.js"
+    "start": "tsc src/index.ts && node src/index.js"
   },
   "license": "ISC",
   "devDependencies": {

@@ -17,11 +17,11 @@ interface Nodes {
 
 
 export class TreeStore {
-    items: Item[];
-    nodes: Nodes = {};
+    private items: Item[];
+    private nodes: Nodes = {};
 
     constructor(items: Item[]) {
-        this.items = items;
+        this.items = [...items];
 
         for (const item of items) {
             if (this.nodes[item.id]) {
